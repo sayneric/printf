@@ -11,6 +11,7 @@ int get_flags(const char *format, int *i)
 	/* - + o # '' */
 	/* 1 2 4 8 16 */
 	int b, curr_i;
+	int flags = 0;
 	const char FLAGS_CH[] = {'-', '+', 'o', '#',  ' ', '\0'};
 	const int FLAGS_ARR[] = {F_MINUS, F_PLUS, F_ZERO, F_HASH, F_SPACE, 0};
 
